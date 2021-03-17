@@ -1,0 +1,25 @@
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  display: block;
+  padding: 15px 15px 15px 0px;
+  color:#4BB543;
+}
+
+#alter_input{
+  border: 1px solid #9E9E9E;
+}
+
+
+#alter_input:focus, #alter_input:hover{
+  box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+  border: 1px solid #f5f5f5;
+}
+
