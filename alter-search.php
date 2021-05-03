@@ -16,10 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require("plugin.php");
 
-function alter_intialize(){
-    require(dirname( __FILE__ ). "/classes/class-alter-initilize.php");
-}
-
 function alter_form_function() {
     require(dirname( __FILE__ ). "/classes/class-alter-form.php");
 }
@@ -27,7 +23,6 @@ function alter_form_function() {
 function alter_search_form_custom() {
     ob_start();
     alter_form_function();
-    alter_intialize();
     return ob_get_clean();
 }
 add_shortcode('alter_search', 'alter_search_form_custom');
