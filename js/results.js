@@ -1,9 +1,9 @@
 jQuery(document).ready(function($){
     $("input").keyup(function(){
         
-        var searchName = $(".name").val();
-        var searchSurname = $(".surname").val();
-        var searchContact = $(".contact").val();
+        var searchProvince = $(".province").val();
+        var searchCity = $(".city").val();
+        var searchStoreType = $(".store").val();
         var searchTerm = $(".search").val();
 
         var listItem = $('.results tbody').children('tr');
@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
         });
 
         var jobCount = $('.results tbody tr[visible="true"]').length;
-        $('.counter').text('Results Found: ' + jobCount + ' Therapist');
+        $('.counter').text('Results Found: ' + jobCount + ' Service Providers');
 
         if(jobCount === '0') {$('.no-result').show();}
         else {$('.no-result').hide();}
